@@ -1,0 +1,40 @@
+-Este archivo es para la planeación del programa y sus componentes
+
+-> Requisitos de aplicacion
+
+Desarrollar una aplicación web donde sea capaz de agregar ítems en una lista de quehaceres y poder completar ítems de la lista.
+
+Funcionalidades
+1. Agregar elementos a la lista de quehaceres con un elemento "input" tipo "text"
+2. Poder marcar o desmarcar cada uno de los elementos como completado con un elemento "input de tipo "checkbox"
+3. Incluir un boton para eliminar todos los elementos de la lista
+4. Incluir un boton para eliminar solo los elementos que están marcados de la lista.
+5. Modificar los estilos CSS de la aplicación a colores y tipografīas de su gusto para hacer la experiencia mas agradable
+6. Montar un servidor web de NodeJS
+    6.1 Debe capturar todos los datos enviados por la aplicación web, donde las responsabilidades del servidor son:
+    6.2 API permite:
+        6.2.1 Guardar la lista de quehaceres
+        6.2.2 Modificar elementos de la lista
+        6.2.3 Eliminar los elementos (Eliminar todos o solo los elementos completados)
+7. Datos deben persistir en una base de datos de su preferencia.
+8. Desplegar la aplicación web en un enlace de manera pública.
+
+
+
+Diseño de Applicación
+
+--Pagina principal
+1. Llevar titulo de pagina y logo de pixel pay
+2. Crear campo de input text con boton para guardar quehaceres
+3. Espacio para botones de modificacion y eliminar(2 de eliminar)
+4. Espacio de listado de quehaceres, 
+5. Crear Modal para modificar y eliminar( Ver si existe un equivalente para sweetalert)
+6. Hacer backend del programa con NodeJS
+
+
+Clase
+quehaceres
+1. ID
+2. descripcionTarea
+3. estado
+4. FechaCreacion
