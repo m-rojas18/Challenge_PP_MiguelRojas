@@ -3,6 +3,8 @@ import "../assets/mainpage.css"
 import Swal from "sweetalert2";
 
 const props = defineProps(['tasksList']);
+const emit = defineEmits(['activate-Eliminate']);
+
 const handleEliminateTasks = (e) => {
 
     let titleEliminate = "";
@@ -36,20 +38,22 @@ const handleEliminateTasks = (e) => {
     }
     if(e.target.id === "be1"){
             //Eliminar todos
-            console.log(props.tasksList);
-            // let a  = props.tasksList = [];
-            // console.log(a);
+            avisoEliminar(e.target.id);
         }
     });
 }
 
 const avisoEliminar =(eliminateAction) => {
-    emit('activateEliminate', eliminateAction);
+    emit('activate-Eliminate', eliminateAction);
 }
 </script>
 <template>
     <button type="button" @click="handleEliminateTasks" class="buttonChallenge" id="be1">Eliminar todo</button>
     <button type="button" @click="handleEliminateTasks" class="buttonChallenge" id="be2">Eliminar marcados</button>
 </template>
+
+<script>
+    export const emits = ['activateEliminate'];
+</script>
 <style>
 </style>
