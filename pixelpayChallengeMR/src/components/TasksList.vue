@@ -1,13 +1,12 @@
 <script setup>
+import '../assets/mainpage.css'
 </script>
 <template>
     <div class="containerList">
         <!-- Logica de recorrer elementos y listar elementos -->
         <div>
-            Tareas
-            <ul>
-                <li></li>
-            </ul>
+            <label>Tareas</label>
+            
         </div>
     </div>
 </template>
@@ -30,4 +29,6 @@
     padding: 50px;
     border-radius: 10px;
 }
+
+
 </style>

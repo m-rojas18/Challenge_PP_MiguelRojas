@@ -1,12 +1,13 @@
 <!-- Aqui se manejara la logica del agregar una tarea en la pagina -->
 <script setup>
+import "../assets/mainpage.css"
 </script>
 
 <template>
     <form>
         <label>Ingresar nueva tarea: </label>
-        <input type="text">
-        <button> Agregar </button>
+        <input type="text" placeholder="">
+        <button type="button"> Agregar </button>
     </form>
 </template>
 
@@ -20,12 +21,6 @@ form{
     padding: 50px;
     border-radius: 5px;
 }
-label{
-    font-size:1em;
-    text-transform: uppercase;
-    letter-spacing:1px;
-    font-weight:bold;
-}
 
 input {
     display: block;
@@ -37,5 +32,14 @@ input {
 }
 button{
     margin-top:10px;
+    padding:10px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4054f0;
+    width: 20%;
+    height:10%;
+    border:none;
+    font-size: 18px;
+    
 }
 </style>
