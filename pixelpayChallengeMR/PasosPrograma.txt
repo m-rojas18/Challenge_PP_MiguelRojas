@@ -5,11 +5,11 @@
 Desarrollar una aplicación web donde sea capaz de agregar ítems en una lista de quehaceres y poder completar ítems de la lista.
 
 Funcionalidades
-1. Agregar elementos a la lista de quehaceres con un elemento "input" tipo "text"
-2. Poder marcar o desmarcar cada uno de los elementos como completado con un elemento "input de tipo "checkbox"
-3. Incluir un boton para eliminar todos los elementos de la lista
-4. Incluir un boton para eliminar solo los elementos que están marcados de la lista.
-5. Modificar los estilos CSS de la aplicación a colores y tipografīas de su gusto para hacer la experiencia mas agradable
+1. Agregar elementos a la lista de quehaceres con un elemento "input" tipo "text" - Listo
+2. Poder marcar o desmarcar cada uno de los elementos como completado con un elemento "input de tipo "checkbox" - Listo
+3. Incluir un boton para eliminar todos los elementos de la lista - Ya
+4. Incluir un boton para eliminar solo los elementos que están marcados de la lista. -Ya
+5. Modificar los estilos CSS de la aplicación a colores y tipografīas de su gusto para hacer la experiencia mas agradable - Listo
 6. Montar un servidor web de NodeJS
     6.1 Debe capturar todos los datos enviados por la aplicación web, donde las responsabilidades del servidor son:
     6.2 API permite:
@@ -24,11 +24,11 @@ Funcionalidades
 Diseño de Applicación
 
 --Pagina principal
-1. Llevar titulo de pagina y logo de pixel pay
-2. Crear campo de input text con boton para guardar quehaceres
+1. Llevar titulo de pagina y logo de pixel pay - Ya
+2. Crear campo de input text con boton para guardar quehaceres - Ya
 3. Espacio para botones de modificacion y eliminar(2 de eliminar)
-4. Espacio de listado de quehaceres, 
-5. Crear Modal para modificar y eliminar( Ver si existe un equivalente para sweetalert)
+4. Espacio de listado de quehaceres,  - Ya
+5. Crear Modal para modificar y eliminar( Ver si existe un equivalente para sweetalert) - Ya
 6. Hacer backend del programa con NodeJS
 
 

@@ -3,6 +3,7 @@
 import InputTask from './components/InputTask.vue';
 import HeaderMain from './components/HeaderMain.vue';
 import ListContainer from './components/ListContainer.vue';
+import ManageTasks from './components/ManageTasks.vue';
 import { ref } from 'vue';
 
 const tasksList = ref([
@@ -16,6 +17,7 @@ const tasksList = ref([
 <template>
    <HeaderMain/>
     <InputTask :tasksList = "tasksList"/>
+    <ManageTasks :tasksList="tasksList"/>
     <ListContainer :tasksList="tasksList"/>
 </template>
 
@@ -25,7 +27,7 @@ const tasksList = ref([
 #app {
   text-align: center;
   color: #2c3e50;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 body {
   margin: 0;

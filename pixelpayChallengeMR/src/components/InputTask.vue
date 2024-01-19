@@ -45,7 +45,7 @@ const addTask = () => {
     <form @submit.prevent="addTask">
         <label>Ingresar nueva tarea: </label>
         <input type="text" placeholder="Nueva Tarea..." v-model="newDescriptionTask">
-        <button type="button" @click="addTask"> Agregar </button>
+        <button type="button" @click="addTask" class="buttonChallenge"> Agregar </button>
     </form>
 </template>
 
@@ -68,17 +68,5 @@ input {
     border: none;
     color: #555;
     border-bottom: 2px solid #ddd;
-}
-button{
-    margin-top:10px;
-    padding:10px 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: #4054f0;
-    width: 20%;
-    height:10%;
-    border:none;
-    font-size: 18px;
-    
 }
 </style>

@@ -1,14 +1,16 @@
 <script setup>
 import '../assets/mainpage.css'
 
-import { defineProps } from 'vue';
 
 const props = defineProps(['tasksList']);
 </script>
 <template>
     <div class="containerList">
         <!-- Logica de recorrer elementos y listar elementos -->
-        <label>Tareas</label>
+        <div class="informationTaks">
+            <label>Tareas</label>
+            <label style="padding-right: 10pxs;">Estado</label>
+        </div>
         <ul>
             <li v-for="task in props.tasksList" :key = "task.id">
                 <p class="descriptionOfTask">{{ task.descriptionTask }}</p> 
@@ -32,6 +34,11 @@ const props = defineProps(['tasksList']);
     height: 200px;
     max-height: 200px;
     overflow: auto;
+}
+
+.informationTaks{
+    display: flex;
+    justify-content: space-between;
 }
 
 ul{
