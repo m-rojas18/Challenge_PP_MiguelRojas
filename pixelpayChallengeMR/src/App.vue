@@ -2,13 +2,20 @@
 
 import InputTask from './components/InputTask.vue';
 import HeaderMain from './components/HeaderMain.vue';
-import TasksList from './components/TasksList.vue';
+import ListContainer from './components/ListContainer.vue';
+
+const tasksList = [
+  {id: 1, descriptionTask: 'Hola mundo', estado: false},
+  {id: 2, descriptionTask: 'Adios Mundo', estado: false}
+];
+
+
 </script>
 
 <template>
    <HeaderMain/>
-    <InputTask/>
-    <TasksList/>
+    <InputTask :tasksList = "tasksList"/>
+    <ListContainer />
 </template>
 
 <style >

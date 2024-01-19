@@ -1,12 +1,13 @@
 <!-- Aqui se manejara la logica del agregar una tarea en la pagina -->
 <script setup>
 import "../assets/mainpage.css"
-import {ref} from "vue"
+import {ref, defineProps} from "vue"
 import Swal from 'sweetalert2'
 
 const newDescriptionTask = ref("");
-const idLastTask = ref(0);
+const idLastTask = ref(2);
 
+const props = defineProps(['tasksList']);
 
 const addTask = () => {
     /*Will add method to array and later store it in database*/
@@ -24,7 +25,7 @@ const addTask = () => {
         });
     } else {
         const newTask = {id: idLastTask.value + 1, descriptionTask: newDescriptionTask.value, state: false}
-        console.log("Hola");
+        props.tasksList.push(newTask);
         Swal.fire({
             title:"¡Exito!",
             text: 'Se agrego la tarea',
@@ -47,6 +48,7 @@ const addTask = () => {
         <button type="button" @click="addTask"> Agregar </button>
     </form>
     <p>Nueva Tares: {{ newDescriptionTask }}</p>
+    <p>Tareas: {{ props.tasksList}}</p>
 </template>
 
 
