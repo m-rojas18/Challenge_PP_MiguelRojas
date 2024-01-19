@@ -1,10 +1,14 @@
 <script setup>
 
-import MainPage from './MainPage.vue'
+import InputTask from './components/InputTask.vue';
+import HeaderMain from './components/HeaderMain.vue';
+import TasksList from './components/TasksList.vue';
 </script>
 
 <template>
-  <MainPage></MainPage>
+   <HeaderMain/>
+    <InputTask/>
+    <TasksList/>
 </template>
 
 <style >

@@ -10,6 +10,8 @@ import '../assets/mainpage.css'
         </div>
     </div>
 </template>
+
+
 <style scoped>
 
 .containerList{
