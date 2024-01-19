@@ -3,11 +3,12 @@
 import InputTask from './components/InputTask.vue';
 import HeaderMain from './components/HeaderMain.vue';
 import ListContainer from './components/ListContainer.vue';
+import { ref } from 'vue';
 
-const tasksList = [
-  {id: 1, descriptionTask: 'Hola mundo', estado: false},
-  {id: 2, descriptionTask: 'Adios Mundo', estado: false}
-];
+const tasksList = ref([
+  {id: 1, descriptionTask: 'Hola mundo', state: false},
+  {id: 2, descriptionTask: 'Adios Mundo', state: false}
+]);
 
 
 </script>
@@ -15,7 +16,7 @@ const tasksList = [
 <template>
    <HeaderMain/>
     <InputTask :tasksList = "tasksList"/>
-    <ListContainer />
+    <ListContainer :tasksList="tasksList"/>
 </template>
 
 <style >

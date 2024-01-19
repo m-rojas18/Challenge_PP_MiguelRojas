@@ -1,7 +1,7 @@
 <!-- Aqui se manejara la logica del agregar una tarea en la pagina -->
 <script setup>
 import "../assets/mainpage.css"
-import {ref, defineProps} from "vue"
+import {ref} from "vue"
 import Swal from 'sweetalert2'
 
 const newDescriptionTask = ref("");
@@ -47,8 +47,6 @@ const addTask = () => {
         <input type="text" placeholder="Nueva Tarea..." v-model="newDescriptionTask">
         <button type="button" @click="addTask"> Agregar </button>
     </form>
-    <p>Nueva Tares: {{ newDescriptionTask }}</p>
-    <p>Tareas: {{ props.tasksList}}</p>
 </template>
 
 
