@@ -14,11 +14,11 @@
 
 form{
     max-width: 500px;
-    margin: 20px auto;
+    margin: 10px auto;
     background: white;
     text-align: left;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 label{
     font-size:1em;
