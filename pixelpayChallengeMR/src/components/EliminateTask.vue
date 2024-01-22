@@ -6,6 +6,7 @@ const props = defineProps(['tasksList']);
 const emit = defineEmits(['activate-Eliminate']);
 
 const handleEliminateTasks = (e) => {
+    //Mostrar Pop up de eliminacion, dar opcion a usuario de cancelar y elimninar el arreglo segun decision
 
     let titleEliminate = "";
     let textConfirmedEliminate = ""
@@ -39,13 +40,16 @@ const handleEliminateTasks = (e) => {
     if(e.target.id === "be1"){
             //Eliminar todos
             avisoEliminar(e.target.id);
+            props.tasksList = [];
         }
     });
 }
 
+
 const avisoEliminar =(eliminateAction) => {
     emit('activate-Eliminate', eliminateAction);
 }
+
 </script>
 <template>
     <button type="button" @click="handleEliminateTasks" class="buttonChallenge" id="be1">Eliminar todo</button>

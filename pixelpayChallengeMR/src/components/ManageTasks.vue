@@ -5,8 +5,6 @@ import EliminateTask from './EliminateTask.vue';
 const props = defineProps(['tasksList']);
 
 const finishEliminate = () => {
-    console.log("Hola");
-    console.log(props.tasksList);
     props.tasksList.forEach(element => {
         element = {}
     });
@@ -16,7 +14,7 @@ const finishEliminate = () => {
 <template>
     <div class="buttonManagerContainer">
         <ModifyTask :tasksList = "props.tasksList" />
-        <EliminateTask  :tasksList = "props.tasksList" @activate-Eliminate="finishEliminate"/>
+        <EliminateTask  :tasksList = "props.tasksList" v-model="finishEliminate"/>
         
     </div>
 </template>
